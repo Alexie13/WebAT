@@ -640,7 +640,7 @@
     <header>
       <div class="container header-content">
         <div class="logo">Web<span>AT</span></div>
-        <div class="hamburger">☰</div>
+        <div class="hamburger"></div>
         <ul class="nav-links">
           <li><a href="#acasa">Acasă</a></li>
           <li><a href="#servicii">Servicii</a></li>
@@ -751,7 +751,7 @@
               <li>Creare site 1-5 pagini</li>
               <li>Design responsive (adaptat pentru mobil)</li>
               <li>Conținut furnizat de client</li>
-              <li>Livrare în 1-2 zile</li>
+              <li>Livrare în 3-4 zile</li>
               <li>1 revizie gratuită</li>
             </ul>
             <a href="#contact" class="btn">Solicită Ofertă</a>
@@ -762,12 +762,11 @@
             <div class="price">30€ <span>/ pagină</span></div>
             <p>Soluție completă, cu conținut creat personalizat</p>
             <ul class="pricing-features">
-              <li>Creare site 1-5 pagini</li>
+              <li>Creare site 1-7 pagini</li>
               <li>Design responsive (adaptat pentru mobil)</li>
-              <li>Conținut creat de mine pe baza ideilor tale</li>
-              <li>Livrare în 3-4 zile</li>
-              <li>2 revizii gratuite</li>
-              <li>Optimizare SEO de bază</li>
+              <li>Conținut furnizat de client / Conținut creat de mine pe baza ideilor clientului</li>
+              <li>Livrare în 1-2 zile</li>
+              <li>3 revizii gratuite</li>
             </ul>
             <a href="#contact" class="btn">Solicită Ofertă</a>
           </div>
@@ -880,74 +879,22 @@
                 <div class="contact-icon">✉️</div>
                 <div>
                   <strong>Email:</strong>
-                  <p>alexietaflan88@gmail.com</p>
+                  <p>webatofficial@gmail.com</p>
                 </div>
               </li>
               <li>
                 <div class="contact-icon">🔍</div>
                 <div>
                   <strong>Program:</strong>
-                  <p>Luni - Vineri: 09:00 - 18:00</p>
+                  <p>Luni - Vineri: 16:00 - 21:00</p>
+                  <p>Sâmbătă: 12:00 - 18:00</p>
+                  <p>Duminică: închis</p>
                 </div>
               </li>
             </ul>
           </div>
 
-          <div class="contact-form">
-            <h3>Trimite-mi un mesaj</h3>
-            <form id="contactForm">
-              <div class="form-group">
-                <input
-                  type="text"
-                  id="nume"
-                  class="form-control"
-                  placeholder="Numele tău"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  id="email"
-                  class="form-control"
-                  placeholder="Email-ul tău"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  id="telefon"
-                  class="form-control"
-                  placeholder="Număr de telefon"
-                />
-              </div>
-              <div class="form-group">
-                <select id="serviciu" class="form-control" required>
-                  <option value="" disabled selected>
-                    Selectează serviciul dorit
-                  </option>
-                  <option value="Site nou (conținut client)">
-                    Site nou (conținut client)
-                  </option>
-                  <option value="Site nou (conținut creat)">
-                    Site nou (conținut creat)
-                  </option>
-                  <option value="Actualizare site existent">
-                    Actualizare site existent
-                  </option>
-                  <option value="Altele">Altele</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <textarea
-                  id="mesaj"
-                  class="form-control"
-                  placeholder="Mesajul tău"
-                  required
-                ></textarea>
-              </div>
-              <button type="submit" class="btn">Trimite Mesaj</button>
+          
             </form>
           </div>
         </div>
@@ -971,7 +918,7 @@
               <li><a href="#servicii">Creare site-uri</a></li>
               <li><a href="#servicii">Actualizare site-uri</a></li>
               <li><a href="#preturi">Prețuri</a></li>
-              <li><a href="#portofoliu">Portofoliu</a></li>
+              <li><a href="#portofoliu">Modele de site-uri</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -980,63 +927,13 @@
               <li><a href="tel:0754949896">0754 949 896</a></li>
               <li>
                 <a href="mailto:alexietaflan88@gmail.com"
-                  >alexietaflan88@gmail.com</a
+                  >webatofficial@gmail.com</a
                 >
               </li>
             </ul>
           </div>
         </div>
-        <div class="copyright">
-          <script>
-            document
-              .getElementById("contactForm")
-              .addEventListener("submit", function (event) {
-                event.preventDefault();
-
-                // Colectează datele din formular
-                const nume = document.getElementById("nume").value;
-                const email = document.getElementById("email").value;
-                const telefon = document.getElementById("telefon").value;
-                const serviciu = document.getElementById("serviciu").value;
-                const mesaj = document.getElementById("mesaj").value;
-
-                // Creează obiectul FormData
-                const formData = new FormData();
-
-                // Adaugă datele în FormData folosind ID-urile din Google Form
-                // ÎNLOCUIEȘTE aceste ID-uri cu cele obținute la pasul 4
-                formData.append("entry.949285036", nume);
-                formData.append("entry.1757568424", email);
-                formData.append("entry.1688260824", telefon);
-                formData.append("entry.213734583", serviciu);
-                formData.append("entry.243787561", mesaj);
-
-                // URL-ul formularului Google - ÎNLOCUIEȘTE FORM_ID cu ID-ul tău
-                const googleFormUrl =
-                  "https://docs.google.com/forms/d/e/1FAIpQLSdOoSIqF7DwnUUpL5lveVWJtUO-F7ACt7RCtQ3Poo3Uq09p4Q/formResponse";
-
-                // Trimite datele către Google Forms
-                fetch(googleFormUrl, {
-                  method: "POST",
-                  mode: "no-cors", // Important pentru a evita erorile CORS
-                  body: formData,
-                })
-                  .then((response) => {
-                    // Arată un mesaj de succes
-                    alert("Mesajul a fost trimis cu succes! Îți mulțumim.");
-                    // Resetează formularul
-                    document.getElementById("contactForm").reset();
-                  })
-                  .catch((error) => {
-                    // Din cauza restricțiilor CORS, vom ajunge mereu aici
-                    // dar în general formularul este trimis cu succes oricum
-                    console.log("Formular trimis");
-                    alert("Mesajul a fost trimis cu succes! Îți mulțumim.");
-                    document.getElementById("contactForm").reset();
-                  });
-              });
-          </script>
-        </div>
+        <div class="copyright"></div>
       </div>
     </footer>
   </body>
